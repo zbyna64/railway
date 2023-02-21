@@ -25,7 +25,8 @@ tasks.named('test') {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'com.gfa.test.TestApplication'
+                'Main-Class': 'com.gfa.test.TestApplication',
+                'Class-Path': '/libs/*.jar'
         )
     }
 }
