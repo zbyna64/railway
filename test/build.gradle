@@ -23,10 +23,10 @@ tasks.named('test') {
 }
 
 jar {
+    enabled = false
     manifest {
         attributes(
-                'Main-Class': 'com.gfa.test.TestApplication',
-                'Class-Path': '/libs/*.jar'
+                'Main-Class': 'com.gfa.test.TestApplication'
         )
     }
 }
